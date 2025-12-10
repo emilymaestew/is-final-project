@@ -1,0 +1,354 @@
+/* Custom Stylesheet for Holistic Nutrition Page */
+/* Emily Stewart - BYU IS Final Project */
+
+/* ===== STYLE 1: Body and General Styles ===== */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f9f5;
+    background-image: linear-gradient(135deg, #f5f9f5 0%, #e8f5e9 100%);
+    color: #2c3e50;
+}
+
+/* ===== STYLE 2: Header Styling ===== */
+.header-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-section h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+/* ===== STYLE 3: Navigation Container ===== */
+.nav-container {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-button {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 12px 30px;
+    background-color: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== DIV 1: Content Section Positioning ===== */
+.content-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* ===== DIV 2: Alternate Background Sections ===== */
+.alt-bg {
+    background-color: #fafafa;
+    border-left: 5px solid #667eea;
+}
+
+/* ===== STYLE 4: Heading Styles with Font Color ===== */
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #667eea;
+    font-size: 2.2em;
+    margin-top: 0;
+    border-bottom: 3px solid #764ba2;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Verdana', sans-serif;
+    color: #764ba2;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+/* ===== STYLE 5: Paragraph and Text Styles ===== */
+p {
+    font-family: 'Georgia', serif;
+    color: #34495e;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ===== STYLE 6: Image Styling ===== */
+.content-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.image-caption {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.95em;
+    margin-top: -15px;
+}
+
+/* ===== STYLE 7: List Styles with Font Family ===== */
+.main-list {
+    font-family: 'Verdana', sans-serif;
+    color: #2c3e50;
+    line-height: 2;
+    padding-left: 30px;
+}
+
+.nested-list {
+    font-family: 'Georgia', serif;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: circle;
+}
+
+.key-points {
+    font-family: 'Arial', sans-serif;
+    color: #34495e;
+    background-color: #e8f5e9;
+    padding: 20px 40px;
+    border-radius: 8px;
+    border-left: 4px solid #4caf50;
+}
+
+.key-points li {
+    margin-bottom: 12px;
+}
+
+/* ===== DIV 3: Video Container Positioning ===== */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-caption {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 15px;
+}
+
+/* ===== STYLE 8: Tableau Visualization Container ===== */
+.tableauPlaceholder {
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+/* ===== STYLE 9: Resources Grid ===== */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.resource-card {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.2);
+    transform: translateY(-5px);
+}
+
+.resource-card h3 {
+    color: #667eea;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.resource-card a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+}
+
+.resource-card a:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+/* ===== STYLE 10: Call-to-Action Section ===== */
+.cta-section {
+    background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 60px 0 0 0;
+}
+
+.cta-section h2 {
+    color: white;
+    border: none;
+    font-size: 2.5em;
+}
+
+.cta-section p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: white;
+    color: #4caf50;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* ===== STYLE 11: Footer Styling ===== */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer a {
+    color: #66bb6a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: #4caf50;
+    text-decoration: underline;
+}
+
+/* ===== STYLE 12: Responsive Design ===== */
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 2em;
+    }
+    
+    .content-section {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    
+    .nav-button {
+        display: block;
+        margin: 10px auto;
+        max-width: 250px;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== On-Page Anchor Smooth Scrolling ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Link Styling ===== */
+a {
+    color: #667eea;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+}
+
+/* ===== Back to Top Button Styling ===== */
+.back-to-top {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4caf50;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.back-to-top:hover {
+    background-color: #66bb6a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
